@@ -61,7 +61,6 @@ export function log(thisMsg: string, clearFirst = true) {
 
    fetch("http://localhost:9000/", {
       method: "POST",
-      mode: 'no-cors',
       body: jsonBody
    })
 }
