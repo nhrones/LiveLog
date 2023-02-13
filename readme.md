@@ -68,7 +68,7 @@ export function log(thisMsg: string, clearFirst = true) {
 
 ## Further Usage
 I've deployed a copy of the server as a service on Deno Deploy.   
-I now use a local Deno-Desktop-View DWM-GUI app that streams from this service. 
+I now use a local Deno-Desktop-View DWM-GUI app that streams from this service.   
 This make a very handy log-companion for DWM-GUI dev work :)
   
 I've also deno-installed a copy of the html View app on my laptop.    
