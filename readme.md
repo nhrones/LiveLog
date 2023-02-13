@@ -68,13 +68,13 @@ export function log(thisMsg: string, clearFirst = true) {
 
 ## Further Usage
 I've deployed a copy of the server as a service on Deno Deploy.   
-
-I then use a local View app that streams from this service.   
-
-I've also installed (Deno-Install) a copy on my laptop that only    
-reqiures from any prompt the command:
+I now use a local Deno-Desktop-View DWM-GUI app that streams from this service. 
+This make a very handy log-companion for DWM-GUI dev work :)
+  
+I've also deno-installed a copy of the html View app on my laptop.    
+I can now use a simple `log` command:
 ```
 $ log
 ```
-This immediately opens the View app connected to the local stream service.   
+This immediately opens the View app connected to a local stream service.   
 I see no reason to exercise Deploy needlessly.
