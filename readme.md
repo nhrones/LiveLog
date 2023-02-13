@@ -24,7 +24,9 @@ This included viewer app will register for the log stream, and then display any 
 The included example app demonstrates the usage with a simple UI.
 Please start the LiveLog service first.
 ```
-deno run -A server.ts
+deno run -A --unstable server.ts
+cd example
+// open index.html with 'Live Server' or any other server of your choice. 
 ```
 
 
