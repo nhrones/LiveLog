@@ -1,0 +1,25 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Run LiveLog Service",
+         "type": "deno",
+         "command": "run",
+         "options": {"cwd": "../"},
+         "args": [
+            "-Ar",
+            "--unstable",
+            "server.ts"
+         ],
+         "problemMatcher": [
+            "$deno"
+         ],
+      },
+      {
+         "label": "Run Example",
+         "type": "shell",
+         "command": "simpleL",
+         "problemMatcher": []
+      },
+   ]
+}
