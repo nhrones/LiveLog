@@ -5,14 +5,14 @@ const serverURL = "http://localhost:9000";
 
 let loggingGUI = null;
 
-export const log = (thisMsg) => {
+export const log = (thisMsg, clear = false) => {
    fetch(serverURL + "/", {
       method: "POST",
       mode: 'no-cors',
       body: JSON.stringify({ 
          topic: "log", 
          data: { 
-            CLS: true,
+            CLS: clear,
             TS: new Date().toLocaleTimeString('en-US'), 
             from: "updateText", 
             msg: thisMsg 

@@ -9,7 +9,7 @@ $('send').addEventListener('click', () => {
       log(`insertionPoint: 45
 start: 45
 end: 56
-text: 'text'
+text: ${msgInput.value}
 `);
    }
 })
