@@ -65,3 +65,16 @@ export function log(thisMsg: string, clearFirst = true) {
    })
 }
 ```
+
+## Further Usage
+I've deployed a copy of the server as a service on Deno Deploy.   
+
+I then use a local View app that streams from this service.   
+
+I've also installed (Deno-Install) a copy on my laptop that only    
+reqiures from any prompt the command:
+```
+$ log
+```
+This immediately opens the View app connected to the local stream service.
+I see no reason to exercise Deploy needlessly.
