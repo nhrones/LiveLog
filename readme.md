@@ -78,3 +78,6 @@ $ log
 ```
 This immediately opens the View app connected to a local stream service.   
 I see no reason to exercise Deploy needlessly.
+
+## DWM client usage
+See: `dwm-client.md`
