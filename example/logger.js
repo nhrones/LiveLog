@@ -6,7 +6,8 @@ const serverURL = "http://localhost:9000";
 let loggingGUI = null;
 
 export const log = (thisMsg, clear = false) => {
-   fetch(serverURL + "/", {
+   //fetch(serverURL + "/", {
+      fetch('https://live-log.deno.dev/', {
       method: "POST",
       body: JSON.stringify({ 
          topic: "log", 

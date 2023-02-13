@@ -3,13 +3,6 @@ import { serve } from "https://deno.land/std@0.174.0/http/server.ts"
 import { join } from "https://deno.land/std@0.174.0/path/mod.ts";
 import { serveFile } from "https://deno.land/std@0.174.0/http/file_server.ts"
 
-// what browser?
-const browserAliase = {
-   windows: "explorer",
-   darwin: "open",
-   linux: "sensible-browser",
-};
-
 const DEBUG = false;
 const DEV = false;
 
@@ -101,23 +94,3 @@ function registerClient(_req: Request): Response {
       },
    })
 }
-
-// just to force loading this module
-const BrowserStart = async () => {
-   console.log('Browser Started!')
-
-   //////////////////////////////////////
-   //  Opens index.html in the browser  //
-   //////////////////////////////////////
-   const browserProcess = Deno.run({
-      cmd: [browserAliase[Deno.build.os], 'http://localhost:9000']
-   });
-
-   await browserProcess.status()
-      .then(() => console.log())
-      .catch((reason) => console.warn(reason));
-}
-///////////////////////////////////////////////////
-//       launch the browser with index.html      //
-/////////////////////////////////////////////////// 
-BrowserStart()
